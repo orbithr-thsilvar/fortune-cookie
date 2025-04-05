@@ -3,8 +3,6 @@ kind: Service
 metadata:
   name: frontend
   namespace: default
-  annotations:
-    argocd.argoproj.io/external-link: https://fortune-cookie.orbithr.com.br
 spec:
   selector:
     app: frontend
@@ -12,4 +10,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
-  type: ClusterIP
+  type: NodePort
