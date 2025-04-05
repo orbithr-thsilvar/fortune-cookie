@@ -20,4 +20,4 @@ spec:
         - containerPort: 8080
         env:
         - name: API_URL
-          value: "https://api.orbithr.com.br/advice"
+          value: "https://api.adviceslip.com/advice"
